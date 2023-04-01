@@ -1,6 +1,6 @@
 const User = require("../models/user.js");
 const Information = require("../models/information.js");
-const BigPromise = require("../middlewares/bigPromise.js");
+const BigPromise = require("../middlewares/BigPromise.js");
 const CustomError = require("../utils/customError.js");
 
 exports.signUser = BigPromise(async (req, res, next) => {

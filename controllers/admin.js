@@ -1,7 +1,7 @@
-const User = require("../models/user.js");
+const BigPromise = require("../middlewares/BigPromise.js");
 const Information = require("../models/information.js");
-const BigPromise = require("../middlewares/bigPromise.js");
 const CustomError = require("../utils/customError.js");
+
 
 exports.adminGetAllUsers = BigPromise(async (req, res, next) => {
   try {
