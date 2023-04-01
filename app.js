@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // middleware setup the logger with custom token formats
-app.use(morgan("dev"));
+app.use(morgan("tiny"));
 
 app.use("/api/v1", userRoute);
 app.use("/api/v1", adminRoute);
